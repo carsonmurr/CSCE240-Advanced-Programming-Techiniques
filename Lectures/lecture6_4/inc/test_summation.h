@@ -1,0 +1,36 @@
+/* Copyright 2022 CSCE240
+ */
+#ifndef LECTURE6_4_INC_TEST_SUMMATION_H_
+#define LECTURE6_4_INC_TEST_SUMMATION_H_
+
+
+#include <lecture6_4/inc/rational.h>
+#include <lecture6_4/inc/summation.h>
+
+#include <cassert>
+// using assert
+#include <cstddef>
+// using size_t
+#include <cstdlib>
+// using atoi
+// using rand
+// using srand
+
+#include <iostream>
+#include <istream>
+#include <sstream>
+#include <string>
+
+
+bool TestFillConstructor(const Rational* start, const Rational* end);
+
+bool TestCopyConstructor(const Summation& from);
+
+bool TestAssignmentOperator(const Summation& rhs);
+
+bool TestAppend(const Rational* start, const Rational* end);
+
+const Rational* BuildRationals(size_t size);
+
+
+#endif  // LECTURE6_4_INC_TEST_SUMMATION_H_
